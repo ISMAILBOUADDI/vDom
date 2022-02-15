@@ -1,4 +1,5 @@
 import createElement from './vdom/createElement'
+import render from './vdom/render'
 // console.log("hello world")
 // const vApp = {
 //  tagName : 'div',
@@ -15,4 +16,6 @@ const vApp = createElement('div', {
  },
  children:[],
 });
-console.log(vApp)
+const $app= render(vApp);
+
+console.log($app)
